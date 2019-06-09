@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="SekeniumBasics.Class1" class="method navigator-link" hash-for-method="firstMethod">firstMethod</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="SekeniumBasics.DifferentActions" class="method navigator-link" hash-for-method="selectDropdown">selectDropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="SekeniumBasics.DifferentActions" class="method navigator-link" hash-for-method="typeTextBox">typeTextBox</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +125,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">SekeniumBasics.Class1</span>
+              <span class="class-name">SekeniumBasics.DifferentActions</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="firstMethod">
-                  </a> <!-- firstMethod -->
-                  <span class="method-name">firstMethod</span>
+                  <a name="selectDropdown">
+                  </a> <!-- selectDropdown -->
+                  <span class="method-name">selectDropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="typeTextBox">
+                  </a> <!-- typeTextBox -->
+                  <span class="method-name">typeTextBox</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +147,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/h9/fn02n7q165q1w4pppj8cjf_r0000gn/T/testng-eclipse-1586171558/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/h9/fn02n7q165q1w4pppj8cjf_r0000gn/T/testng-eclipse-696857647/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +156,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;SekeniumBasics.Class1&quot;/&gt;
+      &lt;class name=&quot;SekeniumBasics.DifferentActions&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -184,11 +196,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'firstMethod')
-data.setCell(0, 2, 'SekeniumBasics.Class1')
-data.setCell(0, 3, 3619);
+data.setCell(0, 1, 'selectDropdown')
+data.setCell(0, 2, 'SekeniumBasics.DifferentActions')
+data.setCell(0, 3, 3355);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'typeTextBox')
+data.setCell(1, 2, 'SekeniumBasics.DifferentActions')
+data.setCell(1, 3, 511);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -219,10 +235,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">SekeniumBasics.Class1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">SekeniumBasics.DifferentActions</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">firstMethod</span>
+                <span class="method-name">selectDropdown</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">typeTextBox</span>
+                <span class="method-start">3358 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
